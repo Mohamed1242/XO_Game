@@ -1,0 +1,40 @@
+body {
+  background: linear-gradient(to right bottom, #d13cff, #031f6a);
+  height: 100vh;
+  display: flex;
+}
+.game {
+  width: 255px;
+  margin: auto;
+  text-align: center;
+  font-family: system-ui;
+  color: white;
+}
+.title {
+  padding: 5px 0;
+  margin: 5px 0;
+  background-color: white;
+  border-radius: 0.5rem;
+  color: #d13cff;
+  font-size: 25px;
+}
+.square {
+  width: 80px;
+  height: 80px;
+  float: left;
+  margin: 2px;
+  border-radius: 0.5rem;
+  background-color: white;
+  color: #d13cff;
+  font-size: 50px;
+  cursor: pointer;
+}
+.square:hover {
+  scale: 1.05;
+  transition: 300ms;
+}
+@media only screen and (max-width: 600px) {
+  .square:hover {
+    scale: 1;
+  }
+}
